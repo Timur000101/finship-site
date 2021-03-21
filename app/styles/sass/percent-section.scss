@@ -1,0 +1,135 @@
+@import "config";
+
+.percent-section {
+    background: #F2F7FF;
+    padding: 100px 0;
+}
+
+.percent-section__content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.percent-section__title {
+    margin-top: 0;
+}
+
+.percent-section__content-header__img img {
+    width: 450px;
+}
+
+.percent-section__content-header__info {
+    padding: 0 30px;
+}
+
+.percent-section__content-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.percent-section__content-footer__img img {
+    width: 450px;
+}
+
+.percent-section__content-footer__info {
+    padding: 0 30px;
+}
+
+.percent-section__info-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0F1A40;
+}
+
+.percent-section__list {
+    padding: 0 25px;
+    list-style: url(../../images/dist/check.png);
+}
+
+.percent-section__list-item {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgba(15,26,64,0.7);
+    line-height: 35px;
+}
+
+
+.percent-section__content-header__buttons {
+    display: flex;
+}
+
+.percent-section__content-footer__buttons {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .percent-section__content-header__img {
+        // width: 30%;
+        margin-left: -20%;
+    }
+    .percent-section__content-footer__img {
+        margin-right: -20%;
+    }
+}
+
+@media (max-width: 890px) {
+    .percent-section__list-item {
+        font-size: 16px;
+    }
+    .percent-section__info-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 790px) {
+    .percent-section__content-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .percent-section__content-header__img {
+        text-align: center;
+        margin-left: 0;
+    }
+    .percent-section__content-footer {
+        flex-direction: column;
+    }
+    .percent-section__content-footer__img {
+        text-align: center;
+        margin-right: 0;
+    }
+    .percent-section__content-header__buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .percent-section__content-footer__buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .percent-section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 490px) {
+    .percent-section__content-header__img img {
+        width: 300px;
+    }
+    .percent-section__content-footer__img img {
+        width: 300px;
+    }
+    .percent-section__content-header__info {
+        padding: 0;
+    }
+    .percent-section__content-footer__info {
+        padding: 0;
+    }
+    .percent-section__list {
+        padding-right: 0;
+    }
+}

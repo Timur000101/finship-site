@@ -1,0 +1,130 @@
+@import "config";
+
+.about_header{
+    margin-top: 105px!important;
+    color: #0F1A40;
+    h1{
+        color: #0F1A40;
+        font-weight: bold;
+        font-size: 48px;
+    }
+    .about_header_text{
+        color: #0F1A40;
+        opacity: 70%;
+        font-size: 20px;
+        width: 65%;
+    }
+    a{
+        text-decoration: underline;
+        color: #1040E2;
+    }
+}
+
+.about_body_header{
+    color: #0F1A40;
+    font-size: 40px;
+    padding: 0 0 20px 0;
+}
+
+.about_body_containers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    color: #0F1A40;
+}
+
+.about_body_container{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+.about_body_container_img img{
+    width: 100%;
+}
+
+.about_body_container_text{
+    width: 85%;
+    padding: 15px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.about_body_footer{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 50px;
+    background: #1040E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .button{
+        margin-top: 25px;
+        width: 300px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        font-size: 18px;
+        color: #1040E2;
+        background: #fff;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+}
+.about_body_footer_text{
+    color: #fff;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+}
+
+
+@media (max-width: 992px) {
+    .about_header h1{
+        font-size: 36px;
+    }
+    .about_header_text{
+        width: 100%!important;
+    }
+    .about_body_header{
+        font-size: 30px;
+    }
+    .about_body_container_text{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 540px) {
+    .about_body_containers{
+        grid-template-columns: 1fr;
+        
+    }
+    .about_body_footer_text, .about_body_container_text{
+        text-align: center;
+        width: 100%;
+    }
+    .about_body_footer .button{
+        width: 260px;
+    }
+    .about_header{
+        margin-top: 75px!important;
+    }
+}

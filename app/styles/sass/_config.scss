@@ -1,0 +1,29 @@
+$main-color: #1040E2;
+$text-title-color: #0F1A40;
+$text-color: rgba(15, 26, 64, 0.7);
+$white-color: #fff;
+$light-bg-color: #F2F7FF;
+$userfont: gilroy-oh5, sans-serif;
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+  }
+}
+
+@include font('gilroy-oh5', semibold, 600, '../fonts/gilroy-semibold.woff2');
+@include font('gilroy-oh5', bold, 700, '../fonts/gilroy-bold.woff2');
+@include font('gilroy-oh5', medium, 500, '../fonts/gilroy-medium.woff2');
+
+body {
+  font-family: $userfont;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+}

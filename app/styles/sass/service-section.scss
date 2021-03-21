@@ -1,0 +1,88 @@
+@import "config";
+
+.service-section__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.service-section__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.service-section__item {
+  max-width: 50%;
+  padding: 35px 40px;
+  cursor: pointer;
+}
+
+// .service-section__item:hover {
+//   background: $main-color;
+// }
+.service-section__item:hover {
+  background: $main-color;
+  transition: background .5s ease-in-out;
+}
+.service-section__item:hover .service-section__item-img img:first-child {
+  display: none;
+  transition: background .5s ease-in-out;
+}
+.service-section__item:hover .service-section__item-img img:last-child {
+  display: block;
+  transition: background .5s ease-in-out;
+}
+.service-section__item:hover h4 {
+  color: #fff;
+}
+.service-section__item:hover p {
+  color: #fff;
+}
+.service-section__item:hover .service-section__item-btn {
+  border: none;
+}
+.service-section__item-img img:last-child{
+  display: none;
+}
+
+
+.service-section__item-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: $text-title-color;
+  margin: 30px 0 15px 0;
+}
+
+.service-section__item-description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-color;
+}
+
+.service-section__item-footer {
+  display: flex;
+}
+
+@media (max-width: 780px) {
+  .service-section__item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 435px) {
+  .service-section__item {
+    padding: 15px 10px;
+  }
+  .service-section__item-title {
+    font-size: 20px;
+  }
+  .service-section__item-description {
+    font-size: 14px;
+  }
+  .service-section__item-btn {
+    padding: 20px 30px!important;
+  }
+}

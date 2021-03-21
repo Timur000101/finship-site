@@ -1,0 +1,174 @@
+@import "config";
+
+.for-section {
+  padding: 100px 0;
+  background-color: $light-bg-color;
+}
+
+.for-section__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.for-section__item {
+  padding: 35px 30px;
+  background-color: $white-color;
+  border-radius: 5px;
+}
+
+.for-section__item-body {
+  display: flex;
+}
+
+.for-section__item-left {
+  margin-right: 40px;
+}
+
+.for-section__item-title {
+  font-weight: 600;
+  font-size: 26px;
+  color: $text-title-color;
+}
+
+.for-section__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color;
+  padding: 35px 30px;
+  border-radius: 5px;
+}
+
+.for-section__footer-title {
+  font-weight: 600;
+  font-size: 26px;
+  color: $white-color;
+}
+
+@media (max-width: 1120px) {
+  .for-section__item-btn {
+    padding: 20px 30px!important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1080px) {
+  .for-section__items {
+    flex-direction: column;
+  }
+
+  .for-section__item {
+    width: 100%;
+  }
+  .for-section__item:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 880px) {
+  .for-section__footer {
+    align-items: flex-start;
+  }
+  .for-section__footer-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .for-section__header {
+    text-align: center;
+  }
+  .for-section__item-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .for-section__item-left {
+    margin-right: 0;
+  }
+  .for-section__footer {
+    align-items: center;
+    text-align: center;
+  }
+  .for-section__footer-btn {
+    width: 100%;
+    padding: 20px 30px!important;
+  }
+}
+
+
+// Control Section Styles Start
+.control-section {
+  padding: 50px 0;
+}
+
+.control-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-section__right {
+  padding: 20px 50px;
+}
+
+.control-section__description {
+  margin-bottom: 35px;
+}
+
+.control-section__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.control-section__reg-btn {
+  width: 290px;
+}
+
+.control-section__about-btn {
+  width: 290px;
+  text-align: center;
+}
+
+
+@media (max-width: 1130px) {
+  .control-section__left img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .control-section__left img {
+    width: 370px;
+  }
+  .control-container {
+    flex-direction: column;
+  }
+
+  .control-section__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .control-section__buttons {
+    flex-direction: column;
+  }
+  .control-section__reg-btn {
+    margin-right: 0!important;
+    margin-bottom: 20px;
+  }
+  .control-section__right {
+    padding: 20px 0;
+  }
+  .control-section__left img {
+    width: 300px;
+  }
+}
+
+// Control Section Styles End

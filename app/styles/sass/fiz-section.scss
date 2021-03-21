@@ -1,0 +1,80 @@
+@import "config";
+
+.fiz-section {
+  background: $light-bg-color;
+}
+
+.fiz-container {
+  display: flex;
+  align-items: center;
+}
+
+.fiz-section__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.fiz-section__footer {
+  background: $white-color;
+  padding: 35px;
+  border-radius: 5px;
+}
+.fiz-section__footer-title {
+  font-weight: 600;
+  font-size: 26px;
+  color: $text-title-color;
+}
+
+.fiz-section__footer-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.fiz-section__right {
+  width: 40%;
+}
+
+@media (max-width: 1190px) {
+  .fiz-section {
+    text-align: center;
+  }
+  .fiz-section__right {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .fiz-section__footer-title {
+    font-size: 24px;
+  }
+  .fiz-section__footer-reg-btn {
+    margin-right: 0!important;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .fiz-section__footer-how-btn {
+    width: 100%;
+  }
+  .fiz-section__footer-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .fiz-section__footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .fiz-section__footer-title {
+    font-size: 20px;
+  }
+  .fiz-section__footer-reg-btn {
+    padding: 20px 0!important;
+  }
+  .fiz-section__footer-how-btn {
+    padding: 20px 0!important;
+  }
+}
