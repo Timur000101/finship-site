@@ -1,0 +1,165 @@
+@import "config";
+
+.routing {
+    color: #0F1A40;
+    a{
+        text-decoration: underline;
+        color: #1040E2;
+    }
+}
+.partner_header{
+    display: flex;
+    color: #0F1A40;
+}
+
+.partner_header_left{
+    div{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 40px;
+    }
+    :last-child{
+        margin-top: 20px;
+    }
+}
+
+.partner_header_left_text{
+    width: 80%;
+    font-size: 28px;
+    span{
+        color: #1040E2;
+    }
+}
+
+
+.partner_benefits_section{
+    background: #1040E2;
+    color: #fff;
+    h1{
+        text-align: center;
+    }
+}
+.partner_benefits_section_body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.partner_benefits_section_body_item div{
+    padding: 5px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pb_number{
+    opacity: .2;
+    font-size: 60px;
+}
+.pb_text{
+    opacity: .7;
+}
+.pb_title{
+    font-size: 24px;
+}
+.pb_btn{
+    width: 80%;
+    margin: 0 auto;
+}
+.how_it_works{
+    color: #0F1A40;
+    h1{
+        text-align: center;
+    }
+}
+
+.partner_payments{
+    h1{
+        text-align: center;
+        color: #1040E2;
+        font-size: 30px;
+    }
+}
+.partner_payments_logo{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarif_section{
+    color: #0F1A40;
+}
+.tarif_section_title{
+    padding: 15px;
+    border: 1px solid rgba($color:#0F1A40, $alpha: .25);
+    font-size: 20px;
+}
+
+.tarif_section_body_item{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.tarif_section_body_items:nth-child(odd){
+    background: #F2F7FF;
+}
+.tarif_section_body_items:nth-child(even){
+    background: #E3ECFA;
+}
+
+.tarif_sec{
+    padding: 15px 0!important;
+}
+
+@media (max-width: 992px) {
+    .partner_header_left_text{
+        font-size: 20px;
+    }
+    .partner_header_left{
+        h1{
+            font-size: 34px;
+        }
+        :last-child{
+            margin-top: 0px;
+        }
+    }
+    .partner_header_right img{
+        width: 280px;
+    }
+    .partner_benefits_section_body{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 540px) {
+    .partner_header{
+        flex-direction: column;
+    }
+    .partner_header_right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .partner_header_right img{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .partner_header_left div{
+        padding: 0;
+    }
+    .partner_header_left_text{
+        width: 100%;
+    }
+    .partner_header_left_img{
+        display: none;
+    }
+    .routing{
+        margin-top: -50px;
+    }
+    .partner_benefits_section_body{
+        grid-template-columns: 1fr;
+    }
+}
