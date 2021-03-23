@@ -42,3 +42,35 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 })
+
+function dropDown(){
+  if (window.innerWidth <= 540){  
+    let el;
+    if (event.srcElement.className == "h3" || event.srcElement.className == "arrow_down"){
+      el = event.srcElement.parentElement
+    }
+    else{
+      el = event.srcElement
+    }
+    
+    if (el.querySelector('.arrow_down').style.display === "none"){
+      el.querySelector('.arrow_down').style.display = "block"
+      el.querySelector('.arrow_up').style.display = "none"
+    }
+    else{
+      el.querySelector('.arrow_down').style.display = "none"
+      el.querySelector('.arrow_up').style.display = "block"
+    }
+    let items = el.parentElement.querySelectorAll('.footer_main_row_item')
+    console.log();
+    if (window.getComputedStyle(items[0], null).getPropertyValue("display") === 'none'){
+      items.forEach(element => {
+        element.style.display = "block"
+      });
+    }else{
+      items.forEach(element => {
+        element.style.display = "none"
+      });
+    }
+  }
+}
