@@ -87,13 +87,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
-}
+    }
 }
 .about_body_footer_text{
     color: #fff;
     font-size: 26px;
     line-height: 31px;
     text-align: center;
+}
+.about_section{
+    overflow: hidden;
+    position: relative;
+    color: #0F1A40;
+    .about_left{
+        width: 60%;
+        span{
+            color: #1040E2;
+        }
+    }
+    .about_right2{
+        display: none;
+    }
+    .about_right{
+        position: absolute;
+        top: 0%;
+        left: 60%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;        
+    }
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -109,6 +136,17 @@
     }
     .about_body_container_text{
         font-size: 22px;
+    }
+    .about_section{
+        .about_left{
+            width: 100%;
+        }
+        .about_right{
+            display: none;
+        }
+        .about_right2{
+            display: block;
+        }
     }
 }
 

@@ -1,0 +1,91 @@
+@import "config";
+
+.return_link{
+    color: #1040E2;
+}
+
+.return_container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.return_container_text{
+    width: 70%;
+    padding: 0 20px;
+}
+.return_possibility img, .return_container img{
+    width: 100%;
+}
+.return_payment_logo{
+    display: flex;
+    align-items: center;
+    img{
+        width: 90px;
+    }
+}
+.return_payment_logo img:first-child{
+    margin-right: 20px;
+}
+.warehouse_body{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+}
+.warehouse_body0{
+    display: flex;
+    flex-direction: column;
+}
+.warehouse_body_item{
+    text-align: center;
+}
+
+.warehouse_body2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.warehouse_btn div{
+    background: #fff;
+    color: #1040E2;
+}
+
+
+.table_subtext{
+    font-size: 14px;
+    color: #0F1A40;
+    opacity: 0.7;
+    padding: 10px;
+}
+.financing .warehouse_body{
+    grid-template-columns: 1fr 1fr;
+}
+.financing .warehouse_body2{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 992px) {
+    .return_container_text{
+        width: 100%;
+    }
+    .return_container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 890px) {
+    .section-description {
+      font-size: 16px;
+    }
+    .warehouse_body2, .warehouse_body{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .warehouse_body, .warehouse_body2, .warehouse_body0{
+        display: none;
+    }
+    .warehouse_swiper{
+        height: 250px!important;
+    }
+}

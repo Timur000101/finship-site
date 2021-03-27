@@ -67,6 +67,7 @@
         width: 60%;
         margin: 0 auto;
         opacity: .7;
+        text-align: center;
     }
 }
 
@@ -121,7 +122,7 @@
 }
 .control_header_text{
     opacity: .7;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 .control_number{
     color:#1040E2;
@@ -197,10 +198,13 @@
 .control_audit_text{
     opacity: .7;
 }
+
+
 .revise_section_body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .revise_step{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -211,6 +215,18 @@
     align-items: center;
     width: 70%;
     margin: 0 auto;
+}
+.revise_two{
+    align-self: flex-start;
+}
+
+.claim-right img{
+    margin-top: -10%;
+    height: 90%;
+    text-align:end;
+}
+.img2{
+    display: none;
 }
 
 @media (max-width: 992px) {
@@ -225,10 +241,64 @@
             font-size: 26px;
         }
     }
+    .claim_statistic_body_item:first-child{
+        border-right: none;
+    }
+    .claim_statistic_body_item:last-child{
+        border-left: none;
+    }
+    .img2{
+        display: block;
+    }
+    .img1{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .swiper-container {
+      height: 150px;
+    }
+    .claim_section_swiper{
+        height: 270px;
+    }
+    .control_section .swiper-container, .revise_swiper{
+        height: 180px;
+    }
+    .claim_statistic_body, .claim_section_body, .control_section_body, .revise_step, .revise_step2{
+        display: none;
+    }
+    .control_advantage_section{
+        overflow-x: scroll!important;
+        // min-width: 700px!important;
+    }
+    .control_advantage{
+        width: 700px;
+    }
+    .img2{
+        display: none;
+    }
+    .img1{
+        display: block;
+    }
 }
 
 @media (max-width: 540px) {
     .control_analitics_section_body{
         grid-template-columns: 1fr;
     }  
+    .claim-right img{
+        margin-top: 10%;
+    }
+    
+    .control_analitics_section_body_item{
+        display: flex;
+        flex-direction: column;
+    }
+    .control_audit_text{
+        text-align: center;
+    }
+    .header_first{
+        margin-bottom: 10px;
+    }
 }

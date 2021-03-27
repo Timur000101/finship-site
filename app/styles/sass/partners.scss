@@ -9,18 +9,17 @@
 }
 .partner_header{
     display: flex;
+    justify-content: space-between;
     color: #0F1A40;
 }
 
 .partner_header_left{
+    width: 50%;
     div{
         padding: 10px 0;
     }
     h1{
         font-size: 40px;
-    }
-    :last-child{
-        margin-top: 20px;
     }
 }
 
@@ -30,6 +29,10 @@
     span{
         color: #1040E2;
     }
+}
+.partner_header_right img{
+    width: 515px;
+    height: 473px;
 }
 
 
@@ -118,7 +121,9 @@
     .partner_header_left_text{
         font-size: 20px;
     }
+
     .partner_header_left{
+        width: 60%;
         h1{
             font-size: 34px;
         }
@@ -134,7 +139,7 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 700px) {
     .partner_header{
         flex-direction: column;
     }
@@ -145,7 +150,7 @@
     }
     .partner_header_right img{
         margin-top: 20px;
-        width: 80%;
+        width: 100%;
     }
     .partner_header_left div{
         padding: 0;
@@ -153,13 +158,30 @@
     .partner_header_left_text{
         width: 100%;
     }
-    .partner_header_left_img{
+    .partner_header_left_img, .partner_benefits_section_body{
         display: none;
     }
+    .partner_benefits_section .swiper-container, .how_it_works .swiper-container{
+        height: 200px;
+    }
+    .partner_payments_logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        img{
+            width: 90px;
+        }
+        grid-gap: 10px;
+    }
+    .partner_header_left{
+        width: 100%;}
+}
+
+@media (max-width: 540px) {
     .routing{
         margin-top: -50px;
     }
     .partner_benefits_section_body{
         grid-template-columns: 1fr;
+        
     }
 }
