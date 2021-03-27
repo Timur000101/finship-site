@@ -27,6 +27,15 @@
 .return_payment_logo img:first-child{
     margin-right: 20px;
 }
+.return_img img{
+    width: 100%;
+}
+.return_img2, .return_img3{
+    display: none;
+}
+
+
+
 .warehouse_body{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
@@ -67,6 +76,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    margin-top: 20px;
 }
 .financing_item{
     background: #F2F7FF;
@@ -101,6 +111,12 @@
             padding: 20px 40px;
         }
     }
+    .return_img2{
+        display: block;
+    }
+    .return_img1{
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
@@ -123,5 +139,14 @@
             text-align: center;
             margin: 0 auto;
         }
+    }
+}
+
+@media (max-width: 540px) {
+    .return_img2{
+        display: none;
+    }
+    .return_img3{
+        display: block;
     }
 }
