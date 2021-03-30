@@ -56,6 +56,16 @@
     background: #fff;
     color: #1040E2;
 }
+.mb-10{
+    margin-bottom: 15px;
+}
+
+.postal_how_it_works{
+    // overflow-x: scroll;
+    img{
+        width: 100%;
+    }
+}
 
 
 .table_subtext{
@@ -87,14 +97,12 @@
     justify-content: space-between;
 }
 
-
 .legal_section{
     display: flex;
     flex-direction: column;
     a{
         padding: 10px 0;
     }
-    
 }
 
 @media (max-width: 992px) {
@@ -106,6 +114,14 @@
         align-items: center;
         grid-template-columns: 1fr;
     }
+    .postal_how_it_works{
+        overflow-x: scroll;
+        img{
+            width: 990px;
+            height: auto;
+        }
+    }
+    
 }
 
 @media (max-width: 890px) {

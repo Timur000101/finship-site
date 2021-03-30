@@ -229,6 +229,10 @@
     display: none;
 }
 
+.schem_work_section{
+    display: none;
+}
+
 @media (max-width: 992px) {
     .control_analitics_section_body{
         width: 100%;
@@ -290,7 +294,29 @@
     .claim-right img{
         margin-top: 10%;
     }
-    
+    .claim_section_swiper{
+        height: 310px;
+    }
+    .schem_work_section{
+        display: block;
+    }
+    .schem_work_swiper{
+        height: 200px;
+    }
+    .claim_section_title{
+        text-align: center;
+    }
+    .schem_work_swiper .claim_section_item{
+        text-align: center;
+        background: #F2F7FF;
+        width: 90%;
+        padding: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
     .control_analitics_section_body_item{
         display: flex;
         flex-direction: column;

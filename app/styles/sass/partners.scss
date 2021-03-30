@@ -134,6 +134,7 @@
     }
     .partner_header_right img{
         width: 280px;
+        height: auto;
     }
     .partner_benefits_section_body{
         grid-template-columns: 1fr 1fr;
@@ -151,7 +152,8 @@
     }
     .partner_header_right img{
         margin-top: 20px;
-        width: 100%;
+        // width: 100%;
+        height: auto;
     }
     .partner_header_left div{
         padding: 0;
@@ -179,7 +181,7 @@
 
 @media (max-width: 540px) {
     .routing{
-        margin-top: -50px;
+        margin-top: -20px;
     }
     .partner_benefits_section_body{
         grid-template-columns: 1fr;
