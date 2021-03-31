@@ -22,8 +22,11 @@
 
 .about_body_header{
     color: #0F1A40;
-    font-size: 40px;
     padding: 0 0 20px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 .about_body_containers{
@@ -51,10 +54,12 @@
 .about_body_container_text{
     width: 85%;
     padding: 15px;
-    font-size: 26px;
     display: flex;
     align-items: center;
     height: 100%;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
 }
 
 .about_body_footer{
@@ -80,17 +85,19 @@
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-        font-size: 18px;
         color: #1040E2;
         background: #fff;
-        font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 .about_body_footer_text{
     color: #fff;
+    font-weight: 600;
     font-size: 26px;
     line-height: 31px;
     text-align: center;
@@ -103,6 +110,9 @@
         width: 60%;
         span{
             color: #1040E2;
+        }
+        div{
+            font-size: 20px;
         }
     }
     .about_right2{
@@ -120,6 +130,7 @@
     }
     img{
         width: 100%;
+        height: fit-content;
     }
 }
 
@@ -133,6 +144,7 @@
     width: 50%!important;
     height: auto!important;
 }
+
 
 @media (max-width: 992px) {
     .about_header h1{

@@ -2,6 +2,9 @@
 
 .return_link{
     color: #1040E2;
+    font-weight: 500;
+font-size: 24px;
+line-height: 32px;
 }
 
 .return_container{
@@ -34,8 +37,24 @@
     display: none;
 }
 
+.return_container_help{
+    div{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h1{
+        font-weight: 500;
+font-size: 40px;
+line-height: 50px;
+    }
+}
 
-
+.warehouse_header_text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0F1A40;
+}
 .warehouse_body{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
@@ -82,6 +101,10 @@
 }
 
 
+.financing_header_text{
+    font-size: 32px;
+    line-height: 40px;
+}
 .financing_items{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,6 +125,11 @@
     flex-direction: column;
     a{
         padding: 10px 0;
+        color: #1040E2;
+        text-decoration: underline;
+        font-size: 20px;
+line-height: 32px;
+/* or 160% */
     }
 }
 

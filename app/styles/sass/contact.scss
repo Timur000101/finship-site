@@ -3,8 +3,12 @@
 .contact_info{
     color: #0F1A40;
     font-size: 20px;
+line-height: 30px;
+color: rgba(15, 26, 64, 0.7);
     h1{
         font-size: 40px;
+        opacity: 1;
+        color: rgba(15, 26, 64, 1);
     }
 }
 .contact_name{
@@ -13,6 +17,8 @@
 }
 .contact_name a{
     color: #1040E2;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .contact_form{
@@ -24,7 +30,13 @@
     font-size: 20px;
     h2{
         width: 60%;
+        font-weight: 500;
         font-size: 40px;
+        line-height: 47px;
+    }
+    .sms_text{
+        font-size: 20px;
+line-height: 30px;
     }
 }
 
@@ -70,6 +82,12 @@
     color: #fff;
     cursor: pointer;
 }
+.contact_form_btn{
+    font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+}
+
 
 .contact_header{
     margin-bottom: -60px!important;

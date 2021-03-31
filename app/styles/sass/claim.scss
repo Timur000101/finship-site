@@ -7,13 +7,29 @@
         opacity: .7;
     }
 }
-
+.claim_header_text{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(15, 26, 64, 0.7);
+}
 
 .claim_statistic_body{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
+}
+.claim_statistic{
+    h1{
+        font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 .claim_statistic_body_item{
     display: flex;
@@ -34,25 +50,35 @@
     margin-top: 20px;
     width: 80%;
     text-align: center;
+    font-weight: 500;
     font-size: 24px;
+    line-height: 32px;
 }
 .claim_statistic_body_item_title{
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
 }
 .claim_text_section{
     color: #0F1A40;
     text-align: center;
     h1{
-        font-size: 36px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
     }
     h2{
         color: #1040E2;
-        font-size: 30px;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
     }
     div{
         opacity: .7;
         width: 68%;
         margin: 0 auto;
+        font-size: 20px;
+        line-height: 30px;
     }
 }
 
@@ -68,6 +94,15 @@
         margin: 0 auto;
         opacity: .7;
         text-align: center;
+    }
+    h1{
+        font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    }
+    h2{
+        font-size: 20px;
+line-height: 30px;
     }
 }
 
@@ -94,15 +129,22 @@
 .claim_form_left_link{
     padding: 10px 0;
     color: #1040E2;
+    font-weight: 500;
+font-size: 16px;
+line-height: 19px;
 }
 .claim_form_left_text{
     width: 95%;
     padding: 10px 0;
     border-top: 1px solid rgba($color: #0F1A40, $alpha: 0.1);
     border-bottom: 1px solid rgba($color: #0F1A40, $alpha: 0.1);
+    font-size: 14px;
+line-height: 20px;
 }
 .claim_form_left_text div:first-child{
     font-weight: bold;
+font-size: 16px;
+line-height: 19px;
     padding-bottom: 8px
 }
 
@@ -116,6 +158,11 @@
         margin-top: 0!important;
     }
 }
+.control_text1{
+    font-size: 20px;
+line-height: 30px;
+}
+
 .control_header_left div:last-child div{    
     display: flex;
     align-items: center;
@@ -132,15 +179,27 @@
     color: #0F1A40;
     h1{
         text-align: center;
+        font-weight: 500;
+font-size: 40px;
+line-height: 50px;
     }
     .subtext{
         opacity: .7;
         text-align: center;
+        font-size: 20px;
+line-height: 30px;
     }
+}
+.revise_text{
+    font-size: 20px;
+line-height: 30px;
+color: rgba(15, 26, 64, 0.7);
 }
 .control_analitics_section{
     h1{
-        text-align: center;
+        text-align: center;font-weight: 500;
+        font-size: 40px;
+        line-height: 50px;
     }
 }
 .control_analitics_section_body{
@@ -154,6 +213,9 @@
         display: flex;
         align-items: center;
         padding: 10px;
+        font-weight: 500;
+font-size: 24px;
+line-height: 32px;
     }
     div img{
         margin-right: 10px;
@@ -171,6 +233,9 @@
 .control_advantage_section h1{
     text-align: center;
     color: #0F1A40;
+    font-weight: 500;
+font-size: 40px;
+line-height: 50px;
 }
 .control_advantage{
     display: grid;
@@ -190,13 +255,27 @@
     }
     .row-1{
         font-size: 16px;
+line-height: 24px;
     }
     .row-3{
         opacity: .7;
+
     }
+}
+.row-2{
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+.row-3-1{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
 }
 .control_audit_text{
     opacity: .7;
+    font-size: 20px;
+line-height: 30px;
 }
 
 
@@ -256,6 +335,25 @@
     }
     .img1{
         display: none;
+    }
+    .claim_header_text{
+        font-size: 16px;
+    }
+    .claim_statistic{
+        h1{
+            font-weight: 500;
+        font-size: 28px;
+        line-height: 26x;
+        }
+        h3{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .claim_statistic_body_item_title{
+        font-weight: 600;
+font-size: 40px;
+line-height: 48px;
     }
 }
 

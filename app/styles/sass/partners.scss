@@ -2,6 +2,8 @@
 
 .routing {
     color: #0F1A40;
+    font-size: 14px;
+    line-height: 16px;
     a{
         text-decoration: underline;
         color: #1040E2;
@@ -19,21 +21,33 @@
         padding: 10px 0;
     }
     h1{
-        font-size: 40px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+.mr-10{
+    margin-right: 10px;
+}
+.partner_header_left_text{
+    width: 80%;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    span{
+        color: #1040E2;
+        
     }
 }
 
-.partner_header_left_text{
-    width: 80%;
-    font-size: 28px;
-    span{
-        color: #1040E2;
-    }
+.control_header_text{
+    font-size: 20px;
+    line-height: 30px;
 }
+
 .partner_header_right img{
-    margin-top: -10%;
+    // margin-top: -10%;
     width: 515px;
-    height: 473px;
+    // height: 473px;
 }
 
 
@@ -57,13 +71,19 @@
 }
 .pb_number{
     opacity: .2;
-    font-size: 60px;
+    font-weight: 500;
+font-size: 70px;
+line-height: 82px;
 }
 .pb_text{
     opacity: .7;
+    font-size: 16px;
+line-height: 24px;
 }
 .pb_title{
-    font-size: 24px;
+    font-weight: 500;
+font-size: 24px;
+line-height: 32px;
 }
 .pb_btn{
     width: 80%;
@@ -106,6 +126,9 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    font-size: 16px;
+line-height: 19px;
+color: rgba(15, 26, 64, 0.7);
 }
 .tarif_section_body_items:nth-child(odd){
     background: #F2F7FF;
@@ -126,7 +149,7 @@
     .partner_header_left{
         width: 60%;
         h1{
-            font-size: 34px;
+            font-size: 32px;
         }
         :last-child{
             margin-top: 0px;
